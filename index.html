@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>کوله‌بار | کاتالوگ کوله‌پشتی دانش‌آموزی</title>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><div class="wrap bar">
+ <a class="logo" href="#top" aria-label="کوله‌بار"><svg viewBox="0 0 120 140"><rect x="18" y="22" width="84" height="108" rx="30" fill="#335C67"/><rect x="32" y="76" width="56" height="42" rx="12" fill="#E09F3E"/><path d="M45 24c0-16 30-16 30 0" fill="none" stroke="#9E2A2B" stroke-width="8" stroke-linecap="round"/></svg>کوله‌بار</a>
+ <nav aria-label="منوی اصلی"><a class="on" href="#top">فروشگاه</a><a href="#cats">دسته‌ها</a><button data-open="about">درباره ما</button><button data-open="contact">تماس با ما</button></nav>
+ <a class="tel" href="tel:+982100000000" dir="ltr">۰۲۱ ۰۰۰۰ ۰۰۰۰</a>
+ <div class="tools">
+  <button class="ib" id="srch" aria-label="جستجو"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg></button>
+  <button class="ib" data-open="wish" aria-label="علاقه‌مندی‌ها"><svg viewBox="0 0 24 24"><path d="M12 20s-8-5-8-11a4.5 4.5 0 018-2.5A4.5 4.5 0 0120 9c0 6-8 11-8 11z"/></svg><span class="dot" id="wc"></span></button>
+  <button class="ib" data-open="cart" aria-label="سبد خرید"><svg viewBox="0 0 24 24"><path d="M5 8h14l-1 12H6zM9 8a3 3 0 016 0"/></svg><span class="dot" id="cc"></span></button>
+  <button class="ib" id="th" aria-label="تغییر تم"><svg viewBox="0 0 24 24"><path d="M20 14A8 8 0 1110 4a6 6 0 0010 10z"/></svg></button>
+ </div>
+</div></header>
+
+<section class="hero" id="top"><div class="wrap">
+ <div class="crumb">خانه / فروشگاه</div>
+ <div class="row"><div><h1>کوله‌پشتی‌های دانش‌آموزی</h1><p>کوله‌هایی سبک، محکم و راحت برای هر مقطع؛ از اولین روز مدرسه تا کنکور.</p></div>
+ <div class="crumb" id="cnt"></div></div>
+</div></section>
+
+<main class="wrap">
+ <div class="filters" id="cats">
+  <button class="pill dark" data-open="about" style="display:none"></button>
+  <div class="chips" id="chips"></div>
+  <div class="sp">
+   <input id="q" type="search" placeholder="جستجوی کوله…" aria-label="جستجو" style="width:170px">
+   <label>مرتب‌سازی <select id="sort"><option value="f">پیشنهادی</option><option value="a">ارزان‌ترین</option><option value="d">گران‌ترین</option><option value="r">بیشترین امتیاز</option></select></label>
+   <div class="vt"><button class="on" data-v="g" aria-label="نمای شبکه‌ای"><svg viewBox="0 0 16 16"><path d="M1 1h6v6H1zM9 1h6v6H9zM1 9h6v6H1zM9 9h6v6H9z"/></svg></button><button data-v="l" aria-label="نمای لیستی"><svg viewBox="0 0 16 16"><path d="M1 2h14v2H1zM1 7h14v2H1zM1 12h14v2H1z"/></svg></button></div>
+  </div>
+ </div>
+ <div class="grid" id="grid"></div>
+ <div class="pg" id="pg"></div>
+</main>
+
+<section class="news"><div class="wrap"><h2>قبل از شروع مدرسه خبردار شوید</h2><p>تخفیف‌های فصلی و مدل‌های جدید، ماهی یک بار؛ بدون ایمیل اضافه.</p>
+<form id="nf"><input type="email" required placeholder="ایمیل خود را وارد کنید" aria-label="ایمیل"><button>عضویت</button></form></div></section>
+
+<footer><div class="wrap"><div class="fg">
+ <div><a class="logo" href="#top">کوله‌بار</a><p style="font-size:13px;color:var(--mute);margin-top:8px;max-width:30ch">کوله‌پشتی‌های ارگونومیک برای دانش‌آموزان ایرانی.</p></div>
+ <div><h4>دسته‌ها</h4><ul id="fcats"></ul></div>
+ <div><h4>شرکت</h4><ul><li><button data-open="about">درباره ما</button></li><li><button data-open="contact">تماس با ما</button></li><li><button data-open="faq">سوالات متداول</button></li></ul></div>
+ <div><h4>تماس</h4><ul><li dir="ltr" style="text-align:right">۰۲۱ ۰۰۰۰ ۰۰۰۰</li><li>info@koolebar.example</li><li>تهران، خیابان ولیعصر</li></ul></div>
+</div><div class="copy">© ۱۴۰۵ کوله‌بار. همه حقوق محفوظ است.</div></div></footer>
+
+<div class="ov" id="ov"></div>
+<aside id="dr" role="dialog" aria-modal="true" aria-labelledby="dt"><div class="dh"><h2 id="dt"></h2><button class="ib" id="cl" aria-label="بستن"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div><div class="db" id="body"></div></aside>
+<div class="toast" id="toast" role="status"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
